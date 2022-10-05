@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahir-Dinosaurio</title>
+
+    <style>
+        body{
+            height: 100vh;
+            background-color: #6f42c1;
+            display: flex;
+            align-items: center;
+        }
+        .contenedor{
+            width: 920px;
+            height: 280px;
+            margin: 0 auto;
+
+            position: relative;
+            background: linear-gradient(#b7d6c7, transparent) #ffe2d1;
+            transition: background-color 1s linear;
+        }
+        .dino {
+            width: 84px;
+            height: 84px;
+            bottom: 22px;
+            position: absolute;
+            left: 42px;
+            z-index: 2;
+            background: url(img/dino.png) repeat-x 0px 0px;
+            background-size: 336px 84px;
+            background-position-x: 0px;
+
+
+        }
+        .suelo {
+            width: 200%;
+            height: 42px;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            background: url(img/suelo.png) repeat-x 0px 0px;
+            background-size: 50% 42px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="suelo"></div>
+        <div class="dino"></div>
+
+    </div>
+
+
+</body>
+</html>
